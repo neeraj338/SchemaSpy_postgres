@@ -14,7 +14,8 @@ Step 3: modify below based on you postgres settings
 -u postgres -p postgres \  --> user and password 
 
 
-Step 4: **change the path heighlighted** "chrome.exe" **"file:///C:/Users/<USER_NAME>/Desktop/SchemaSpy_postgres**/schemaspy/index.html"
+Step 4: **change the path heighlighted** 
+start "" "chrome.exe" **"file:///C:/Users/<USER_NAME>/Desktop/SchemaSpy_postgres**/schemaspy/index.html"
 
 
 **Run  $> ./er_diagram.sh**
