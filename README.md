@@ -17,6 +17,8 @@ Step 3: modify below based on you postgres settings
 Step 4: **change the path heighlighted** <br/>
 
 start "" "chrome.exe" **"file:///C:/Users/<USER_NAME>/Desktop/SchemaSpy_postgres**/schemaspy/index.html"
+#on mac machine 
+open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome **"file:///C:/Users/<USER_NAME>/Desktop/SchemaSpy_postgres**/schemaspy/index.html"
 
 
 **Run  $> ./er_diagram.sh**
