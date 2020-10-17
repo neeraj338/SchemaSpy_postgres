@@ -4,14 +4,15 @@ set -x
 
 java -jar schemaspy-6.0.0.jar \
 -t pgsql \
--db testDB \
--host localhost:5432 \
--u postgres -p postgres \
+-db ${DB_NAME:-testdb} \
+-host ${DB_HOST:-localhost}:${DB_PORT:-5432} \
+-u ${DB_USER_NAME:-postgres} \
+-p ${DB_PASSWORD:-postgres} \
+-all \
 -o ./schemaspy \
 -dp postgresql-42.2.5.jar \
--gv ~/Desktop/schema_visualizer/graphviz-2.38 \
--s public -noads
+-gv ./graphviz-2.38 \
+-noads
 
-echo "opening ./schemaspy/index.html to chrome"
-
-start "" "chrome.exe" "file:///C:/Users/<USER_NAME>/Desktop/SchemaSpy_postgres/schemaspy/index.html"
+cd schemaspy
+python -m SimpleHTTPServer 5060
