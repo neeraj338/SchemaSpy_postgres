@@ -38,7 +38,7 @@ docker run --name schemaspy \
 --network docker-compose_postgres \
 needubey/schemaspy_postgres
 ````
-`open http://localhost:5060`
+`open ` http://localhost:5060
 
 # Note:
 _`--network <container network name in which postgres is running>`_
