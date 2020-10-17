@@ -1,9 +1,9 @@
-#Prerequisite
+# Prerequisite
 ```
 python
 ```` 
 
-#Environment variable
+# Environment variable
 ````
 export DB_NAME='<your_db_name>'
 export DB_HOST='<your_db_host>'
@@ -25,7 +25,7 @@ Step 3: open http://localhost:5060
 
 Done ! 
 
-#Docker
+# Docker
 ````
 docker run --name schemaspy \
 -p 5060:5060 \
@@ -40,5 +40,5 @@ needubey/schemaspy_postgres
 ````
 `open http://localhost:5060`
 
-#Note:
+# Note:
 _`--network <container network name in which postgres is running>`_
